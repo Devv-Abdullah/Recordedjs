@@ -9,7 +9,9 @@
 </head>
 <body>
 
-    <button id="contactButton" onclick="contactus()">Contact</button>
+    <!-- js part2 -->
+
+    <!-- <button id="contactButton" onclick="contactus()">Contact</button>
     <br><br>
 
     <label>number 1</label>
@@ -27,7 +29,27 @@
     <input type="number" id="numberInput2">
     <br><br>
     <button onclick="calculate()">Calculate</button>
-    <p id="result">??</p>
+    <p id="result">??</p> -->
+
+
+    <!-- event -->
+
+    <div id="contant">
+        <form action="form">
+            <h1>tets</h1>
+            <input required id="num1" type="number" name="num1">
+            <select name="" id="selectedOperation">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input required id="num2" type="number" name="num2">
+            =
+            <span id="result">??</span>
+            <input type="submit">
+        </form>
+    </div>
 
     <script src='index.js'></script>
     

@@ -1,4 +1,6 @@
-var contactButton = document.getElementById('contactButton')
+// js part2
+
+/*var contactButton = document.getElementById('contactButton')
 console.log(contactButton)
 
 function contactus(){
@@ -29,4 +31,22 @@ function calculate(){
     else if(operation.value === '/'){
         result.innerHTML = parseInt(numberInput.value)/parseInt(numberInput2.value)
     }
+}*/
+
+
+// event
+
+var selectedOperation = document.getElementById('selectedOperation')
+form.addEventListener('submit', function(event)){
+    event.preventDefault();
+    console.log(selectedOperation.value);
+    console.log("Hello world!")
+    var num1 = document.getElementById('num1').value
+    var num2 = document.getElementById('num2').value
+    var result = document.getElementById('result')
+
+    var sumation = parseInt(num1) + parseInt(num2)
+    alert('sumation is :'+ sumation)
+    console.log(sumation)
+    result.innerHTML = sumation
 }
