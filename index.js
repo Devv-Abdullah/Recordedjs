@@ -37,7 +37,7 @@ function calculate(){
 // event
 
 var selectedOperation = document.getElementById('selectedOperation')
-form.addEventListener('submit', function(event)){
+form.addEventListener('submit', function(event){
     event.preventDefault();
     console.log(selectedOperation.value);
     console.log("Hello world!")
@@ -49,4 +49,4 @@ form.addEventListener('submit', function(event)){
     alert('sumation is :'+ sumation)
     console.log(sumation)
     result.innerHTML = sumation
-}
+})
