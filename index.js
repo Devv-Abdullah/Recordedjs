@@ -37,16 +37,52 @@ function calculate(){
 // event
 
 var selectedOperation = document.getElementById('selectedOperation')
+/*function myFunction(){
+    console.log("Hello world!")
+    var num1 = document.getElementById('num1').value;
+    var num2 = document.getElementById('num2').value;
+    var result = document.getElementById('result');
+    var sumation = parseInt(num1) + parseInt(num2);
+    alert('sumation :'+ sumation);
+    console.log(sumation);
+    result.innerHTML = sumation;
+}*/
+
 form.addEventListener('submit', function(event){
     event.preventDefault();
     console.log(selectedOperation.value);
+    // myFunction();
     console.log("Hello world!")
-    var num1 = document.getElementById('num1').value
-    var num2 = document.getElementById('num2').value
-    var result = document.getElementById('result')
+    var num1 = document.getElementById('num1').value;
+    var num2 = document.getElementById('num2').value;
+    var result = document.getElementById('result');
 
-    var sumation = parseInt(num1) + parseInt(num2)
-    alert('sumation is :'+ sumation)
-    console.log(sumation)
-    result.innerHTML = sumation
+    switch(selectedOperation.value){
+        case '+':
+            var sumation = parseInt(num1) + parseInt(num2);
+            break;
+        case '-':
+            var sumation = parseInt(num1) - parseInt(num2);
+            break;
+        case '*':
+            var sumation = parseInt(num1) * parseInt(num2);
+            break;
+        case '/':
+            var sumation = parseInt(num1) / parseInt(num2);
+            break;
+        default:
+            console.log("wrong")
+            break;
+    }
+    // var sumation = parseInt(num1) + parseInt(num2);
+    alert('sumation is :'+ sumation);
+    console.log(sumation);
+    result.innerHTML = sumation;
 })
+
+// var navBarBackground = document.getElementsByClassName('bg-light');
+// console.log(navBarBackground);
+
+var navbar = document.getElementById('navbar');
+console.log(navbar);
+navbar.style.backgroundColor = "red";
